@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_redux_app/keys/keys.dart';
 
 class LoadingIndicator extends StatelessWidget {
   LoadingIndicator({Key key}):super(key: key);
@@ -6,7 +7,7 @@ class LoadingIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Center(
-      child: new CircularProgressIndicator(),
+      child: new Text("Loading"),
     );
   }
 }

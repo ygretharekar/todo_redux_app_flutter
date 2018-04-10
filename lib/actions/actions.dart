@@ -15,15 +15,16 @@ class TodosLoadedAction {
 }
 
 class UpdateTodoAction {
+  final String id;
   final Todo updatedTodo;
 
-  UpdateTodoAction(this.updatedTodo);
+  UpdateTodoAction(this.id, this.updatedTodo);
 }
 
 class DeleteTodoAction {
-//  final String id;
+final String id;
 
-  DeleteTodoAction();
+  DeleteTodoAction(this.id);
 }
 
 class AddTodoAction {

@@ -4,10 +4,13 @@ import 'package:todo_redux_app/models/models.dart';
 import 'package:todo_redux_app/containers/filter_selector.dart';
 import 'package:todo_redux_app/containers/filtered_todos.dart';
 import 'package:todo_redux_app/keys/keys.dart';
+import 'package:todo_redux_app/containers/tab_selector.dart';
 
 class HomeScreen extends StatelessWidget {
 
   HomeScreen():super(key:  Keys.homeScreen);
+
+
 
   @override
   Widget build(BuildContext context) =>
@@ -24,10 +27,11 @@ class HomeScreen extends StatelessWidget {
                 floatingActionButton: new FloatingActionButton(
                     key: Keys.addTodoFab,
                     onPressed: () =>
-                        Navigator.pushNamed(context, "/"),
+                        Navigator.pushNamed(context, "/addtodo"),
                     child: new Icon(Icons.add),
                     tooltip: 'Add Todo',
                 ),
+                bottomNavigationBar: new TabSelector(),
               )
       );
 }

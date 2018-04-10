@@ -53,6 +53,7 @@ class AppState {
           activeFilter == other.activeFilter;
   }
 
+
   @override
   String toString() {
     // TODO: implement toString

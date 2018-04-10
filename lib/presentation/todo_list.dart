@@ -12,7 +12,6 @@ class TodoList extends StatelessWidget {
   final Function(Todo) onRemove;
   final Function(Todo) onUndoRemove;
 
-
   TodoList(
       {
         Key key,
@@ -31,5 +30,16 @@ class TodoList extends StatelessWidget {
         }
     );
   }
+
+
+  ListView _buildListView() =>
+      new ListView.builder(
+          key: Keys.todoList,
+          itemCount:  todos.length,
+          itemBuilder: (BuildContext context, int index) {
+            final todo = todos[index];
+            
+          }
+      );
 
 }

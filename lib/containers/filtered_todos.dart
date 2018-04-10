@@ -53,12 +53,15 @@ class _ViewModel {
         ),
         onCheckboxChanged: (todo, complete) {
           store.dispatch(
-            new UpdateTodoAction(todo)
+            new UpdateTodoAction(
+                todo.id,
+                todo.copyWith(complete: !todo.complete)
+            )
           );
         },
         onRemove: (todo) {
           store.dispatch(
-            new DeleteTodoAction()
+            new DeleteTodoAction(todo.id)
           );
         },
         onUndoRemove: (todo) {

@@ -4,6 +4,7 @@ import 'package:flutter_redux/flutter_redux.dart';
 import 'reducers/app_state_reducer.dart';
 import 'package:todo_redux_app/models/models.dart';
 import 'presentation/home_screen.dart';
+import 'containers/add_todo.dart';
 
 void main() => runApp(new ReduxApp());
 
@@ -28,10 +29,12 @@ class ReduxApp extends StatelessWidget {
                     return new HomeScreen();
                   }
               );
+            },
+            '/addtodo': (context) {
+              return new AddTodo();
             }
           },
         )
     );
   }
-
 }

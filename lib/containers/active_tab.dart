@@ -7,12 +7,10 @@ import 'package:todo_redux_app/models/models.dart';
 class ActiveTab extends StatelessWidget {
   final ViewModelBuilder<AppTab> builder;
 
-
   ActiveTab({ Key key, @required this.builder}): super(key: key);
 
   @override
   Widget build(BuildContext context) {
-
     return new StoreConnector<AppState, AppTab>(
         distinct: true,
         builder: builder,
