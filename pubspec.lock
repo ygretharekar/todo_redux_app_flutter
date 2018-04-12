@@ -57,6 +57,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.14.6"
+  concepts:
+    dependency: transitive
+    description:
+      name: concepts
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.0"
   convert:
     dependency: transitive
     description:
@@ -85,6 +92,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.1"
+  either:
+    dependency: transitive
+    description:
+      name: either
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.8"
   file:
     dependency: transitive
     description:
@@ -247,6 +261,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.4.0"
+  option:
+    dependency: "direct main"
+    description:
+      name: option
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.2.0"
   package_config:
     dependency: transitive
     description:
@@ -268,6 +289,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.5.1"
+  path_provider:
+    dependency: "direct main"
+    description:
+      name: path_provider
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.4.0"
   plugin:
     dependency: transitive
     description:
@@ -450,3 +478,4 @@ packages:
     version: "2.1.13"
 sdks:
   dart: ">=2.0.0-dev.28.0 <=2.0.0-edge.3c4dccbd46f152be9e1b6ca95c57357e8e48057c"
+  flutter: ">=0.1.4 <2.0.0"

@@ -5,12 +5,11 @@ import 'package:todo_redux_app/containers/filter_selector.dart';
 import 'package:todo_redux_app/containers/filtered_todos.dart';
 import 'package:todo_redux_app/keys/keys.dart';
 import 'package:todo_redux_app/containers/tab_selector.dart';
+import 'package:todo_redux_app/containers/stats.dart';
 
 class HomeScreen extends StatelessWidget {
 
   HomeScreen():super(key:  Keys.homeScreen);
-
-
 
   @override
   Widget build(BuildContext context) =>
@@ -23,7 +22,7 @@ class HomeScreen extends StatelessWidget {
                     new FilterSelector(visible: true)
                   ],
                 ),
-                body: FilteredTodos(),
+                body: activeTab == AppTab.todos ? new FilteredTodos(): new Stats(),
                 floatingActionButton: new FloatingActionButton(
                     key: Keys.addTodoFab,
                     onPressed: () =>
@@ -34,4 +33,7 @@ class HomeScreen extends StatelessWidget {
                 bottomNavigationBar: new TabSelector(),
               )
       );
+
+
+
 }

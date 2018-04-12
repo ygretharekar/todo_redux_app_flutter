@@ -1,5 +1,5 @@
 import 'package:todo_redux_app/models/models.dart';
-
+import 'package:todo_redux_app/optional/optional.dart';
 
 
 List<Todo> todoSelector(AppState state) => state.todos;
@@ -35,12 +35,10 @@ List<Todo> filteredTodosSelector(
   }).toList();
 }
 
-/*
-Optional<Todo> todoSelector(List<Todo> todos, String id) {
+Optional<Todo> todosSelector(List<Todo> todos, String id) {
   try {
     return new Optional.of(todos.firstWhere((todo) => todo.id == id));
   } catch (e) {
     return new Optional.absent();
   }
 }
-*/

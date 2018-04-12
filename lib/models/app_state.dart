@@ -15,7 +15,7 @@ class AppState {
     this.todos = const []
   });
 
-  factory AppState.loading() => new AppState(isLoading: true);
+  factory AppState.loading() => new AppState(isLoading: false);
 
   AppState copyWith(
     {

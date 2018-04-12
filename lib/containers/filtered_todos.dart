@@ -16,7 +16,7 @@ class FilteredTodos extends StatelessWidget {
           (context, vm) {
             return  new TodoList(
                 todos: vm.todos,
-                onCheckboxChange: vm.onCheckboxChanged,
+                onCheckboxChanged: vm.onCheckboxChanged,
                 onRemove: vm.onRemove,
                 onUndoRemove: vm.onUndoRemove
             );

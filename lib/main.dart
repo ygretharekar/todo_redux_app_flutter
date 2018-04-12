@@ -37,4 +37,5 @@ class ReduxApp extends StatelessWidget {
         )
     );
   }
+
 }

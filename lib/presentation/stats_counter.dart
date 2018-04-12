@@ -16,7 +16,11 @@ class StatsCounter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new AppLoading(
-        builder: null
+        builder: (context, loading) {
+          return loading ?
+              new LoadingIndicator(key: new Key('__statsLoading__'))
+              : _buildStats(context);
+        }
     );
   }
 
@@ -57,5 +61,4 @@ class StatsCounter extends StatelessWidget {
       ),
     );
   }
-
 }
